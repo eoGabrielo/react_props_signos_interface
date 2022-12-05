@@ -15,4 +15,4 @@ No componente nos parâmetros() colocamos chaves e o valor que iremos reutilizar
 	);
 }
 
-- Chamando o prop em outro componente pela tag: <Pessoa nome="Gabriel" idade="22" salario="9999"/>
+- Chamando o prop em outro componente pela tag: < Pessoa nome="Gabriel" idade="22" salario="9999"/>
