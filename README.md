@@ -5,7 +5,7 @@ Realizei um projeto aonde fiz um card e somente mudei seus valores de atributos 
 
 ## Lógica
 
-No componente nos parâmetros() colocamos chaves e o valor que iremos reutilizar, funciona como uma variável aonde depois podemos atribuir um valor a ela na propiá tag do componente em outro arquivo JSX, nos parâmetros podemos tanto chamar o somente (props) ou já chamar com o nome da variável entre encapsulado entre chaves -> <strong> ({nome, idade, salario}) </strong>.<br>
+No componente nos parâmetros() colocamos chaves e o valor que iremos reutilizar, funciona como uma variável aonde depois podemos atribuir um valor a ela na propiá tag do componente em outro arquivo JSX, nos parâmetros podemos tanto chamar o somente (props) ou já chamar com o nome da variável encapsulado entre chaves -> <strong> ({nome, idade, salario}) </strong>.<br>
 
 - Sintax Prop: const Pessoa = ({nome, idade, salario }) => {
 	return(
