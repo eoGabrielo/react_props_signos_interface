@@ -1,0 +1,12 @@
+.box {
+  background-color: #06417c;
+  padding: 10px;
+}
+
+.texto{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}

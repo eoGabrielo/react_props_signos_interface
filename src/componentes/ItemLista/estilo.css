@@ -1,0 +1,45 @@
+.boxSigno {
+  background-color: #0C437A;
+  color: #fff;
+  margin: 25px 10px 0;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 1.2rem;
+  border: 1px solid #022141;
+  width: 150px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.boxSigno:hover{
+  transform: translateY(-15px);
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.imagemSigno {
+  width: 140px;
+  height: 100px;
+  background-color: #fff;
+  object-fit: contain;
+  border-radius: 2px;
+  border: 1px solid #04284d;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 8px;
+  flex: 1;
+  transition: 0.5s;
+}
+
+.nomeSigno {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.periodoNascimento {
+  font-size: 14px;
+}
