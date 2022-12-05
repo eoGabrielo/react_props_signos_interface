@@ -1,6 +1,7 @@
 # Utilizando Props no React
 
 Prop é um valor que passamos para um componente, aonde conseguimos reutilizar um mesmo componente em outro arquivo e somente mudar seus valores pelos atributos.<br>
+Realizei um projeto aonde fiz um card e somente mudei seus valores de atributos ao chama-lo em outro componente.
 
 ## Lógica
 
