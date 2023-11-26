@@ -1,18 +1,40 @@
-# Utilizando Props no React
+# Reutilização Dinâmica de Componentes no React
 
-Prop é um valor que passamos para um componente, aonde conseguimos reutilizar um mesmo componente em outro arquivo e somente mudar seus valores pelos atributos.<br>
-Realizei um projeto aonde fiz um card e somente mudei seus valores de atributos ao chama-lo em outro componente.
+Aproveite a flexibilidade do React para reutilizar componentes dinamicamente com Props! Este projeto demonstra a aplicação de Props em um componente de lista de signos, permitindo a personalização dos valores em diferentes instâncias.
 
-## Lógica
+## Utilizando Props:
 
-No componente nos parâmetros() colocamos chaves e o valor que iremos reutilizar, funciona como uma variável aonde depois podemos atribuir um valor a ela na propiá tag do componente em outro arquivo JSX, nos parâmetros podemos tanto chamar o somente (props) ou já chamar com o nome da variável encapsulado entre chaves -> <strong> ({nome, idade, salario}) </strong>.<br>
+1. **Defina o Componente com Props:**
+   ```jsx
+   // Exemplo de Sintaxe
+   const ItemLista = ({ signo, dataInicio, dataFim, imagem }) => {
+     return (
+       <div className="item-lista">
+         <img src={imagem} alt={signo} />
+         <p>{signo}</p>
+         <p>{dataInicio} - {dataFim}</p>
+       </div>
+     );
+   };
+   ```
 
-- Sintax Prop: const Pessoa = ({nome, idade, salario }) => {
-	return(
-		<div>
-			<p>Nome: {nome} idade: {idade} salario: {salario}</p>
-		</div>
-	);
-}
+2. **Chame o Componente com Valores Diferentes:**
+   ```jsx
+   // Exemplo de Chamada
+   <ItemLista
+     signo="Aquário" dataInicio="21/01"
+     dataFim="19/02" imagem="assets/aquario.jpg"/>
+   ```
+   Personalize o componente em qualquer parte da aplicação ajustando os valores das Props!
 
-- Chamando o prop em outro componente pela tag: < Pessoa nome="Gabriel" idade="22" salario="9999"/>
+## Lógica de Funcionamento:
+
+- O componente `ItemLista` recebe valores dinâmicos (Props) para exibir informações específicas.
+- A Sintaxe de Props oferece uma maneira eficaz de personalizar componentes e promover a reutilização.
+
+## Estrutura do Projeto:
+- `ItemLista.js`: Componente reutilizável de item de lista com valores dinâmicos por meio de Props.
+- `ListaDeSignos.js`: Exemplo de utilização do componente `ItemLista` para criar uma lista de signos.
+
+**Nota:**
+A abordagem de Props no React possibilita a criação de componentes versáteis e reutilizáveis. Experimente e ajuste conforme necessário para atender às necessidades específicas do seu projeto.
